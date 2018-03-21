@@ -1,0 +1,54 @@
+header img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+header nav{
+    box-shadow: none;
+}
+
+header p {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    color: #07014c;
+}
+
+header h4 {
+    color: #07014c;
+}
+
+#centeredmenu {
+    float:left;
+    width:100%;
+    overflow:hidden;
+    position:relative;
+
+ }
+ #centeredmenu ul {
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
+ }
+ #centeredmenu ul li {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    right:50%;
+ }
+ #centeredmenu ul li a {
+    display:block;
+    margin:0 0 0 1px;
+    padding:3px 10px;
+    color:#07014c;
+    text-decoration:none;
+    line-height:1.1em;
+    font-size: 2.7em;
+ }
