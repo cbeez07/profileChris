@@ -2,66 +2,98 @@
 <html lang="en-us">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Contact | Chris Beesley</title>
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header class="header teal lighten-2 center-align z-depth-1">
+      <h4>Christopher Beesley</h4>
+      <img src="assets/images/profilePic.jpg" class="circle responsive-img" alt="Chris Beesley">
+      <p>Full-Stack Web Developer</p>
+
+    <nav class="teal lighten-2">
+        <div class="nav-wrapper" id="centeredmenu">
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li class="center-align"><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="assets/documents/ChrisResume2.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
   </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+  <div class="parallax-container">
+      <div class="parallax"><img class="bgImage"src="assets/images/parallax1.jpg">
       </div>
-    </section>
+  </div>    
+
+  <div class="container"> 
+    <div class="row">
+      <form class="col s12">
+        <h4>Contact</h4>
+        <div class="row">
+          <div class="input-field col m6 s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Name</label>
+          </div>
+          <div class="input-field col m6 s12">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">Message</label>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div> 
+
+  <div class="parallax-container">
+    <div class="parallax"><img class="bgImage"src="assets/images/parallax2.jpg"></div>
   </div>
 
-  <footer>
+
+  <footer class="page-footer teal lighten-2">
     <div class="container">
-      Copyright &copy; 2016 Your Name
+        <div class="row">
+        <div class="col l6 s12">
+            <h5 class="white-text">Connect With Me</h5>
+            <a class="grey-text text-lighten-3" href="https://github.com/cbeez07"><img src="assets/images/github-128.png" alt="github"></a>
+            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/beesleyc07"><img src="assets/images/linkedin-128.png" alt="linkedIn"</a>
+            <a class="grey-text text-lighten-3" href="https://stackexchange.com/users/12539854/chris-beesley"><img src="assets/images/stackoverflow-128.png"</a>
+            
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright cyan darken-3">
+        <div class="container">
+        © 2018 Copyright Christopher Beesley
+        </div>
     </div>
   </footer>
+    
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="javascript/app.js"></script>
+
 </body>
 
 </html>

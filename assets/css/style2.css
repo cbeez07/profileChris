@@ -6,7 +6,6 @@ header img {
 
 header {
     padding-top: 10px;
-    margin-bottom: 20px;
 }
 
 header nav{
@@ -65,13 +64,20 @@ header h4 {
      margin-top: 30px;
  }
 
- body {
+ .bgImage {
+     max-width: 100%;
+ }
+ .parallax-container {
+    height: 300px;
+  }
+    
+ /* body {
     background-image: url(../images/bgImage.jpg);
     background-repeat: no-repeat;
     height: 100%;
     background-position: center 85px;
     background-size: cover;
-}
+} */
 
 div p {
     color: #07014c;
