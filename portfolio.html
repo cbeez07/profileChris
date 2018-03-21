@@ -2,74 +2,144 @@
 <html lang="en-us">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Portfolio | Chris Beesley</title>
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+   <header class="header teal lighten-2 center-align z-depth-1">
+        <h4>Christopher Beesley</h4>
+        <img src="assets/images/profilePic.jpg" class="circle responsive-img" alt="Chris Beesley">
+        <p>Full-Stack Web Developer</p>
+
+    <nav class="teal lighten-2">
+        <div class="nav-wrapper" id="centeredmenu">
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li class="center-align"><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="assets/documents/ChrisResume2.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
   </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
-
-        <h3>Hangman</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-      </div>
-    </section>
+  <div class="container portfolioTop">
+      <span><i class="medium material-icons">account_box</i>Projects:</span>
   </div>
 
-  <footer>
+
+  <div class="container">
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_1</i>Hangman-Game</div>
+        <div class="collapsible-body">
+          <a href="https://cbeez07.github.io/Hangman-Game/" target="_blank">
+            <img src="assets/images/hangman.png" alt="hangman" class="websitePics">
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_2</i>Crystal Game</div>
+        <div class="collapsible-body">
+          <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_3</i>Third</div>
+        <div class="collapsible-body">
+          
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_4</i>Forth</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_5</i>Fifth</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_6</i>Sixth</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+       
+    </ul>
+  </div>
+  
+  <div id="main-container" class="container">
+      <section class="main-section">
+          <h1>Portfolio</h1>
+    
+          <div class="work">
+            <a href="https://cbeez07.github.io/Hangman-Game/" target="_blank">
+              <img src="assets/images/hangman.png" alt="hangman">
+    
+              <h3>Hangman</h3>
+            </a>
+          </div>
+          <div class="work">
+            <a href="https://cbeez07.github.io/week-4-game/" target="_blank">
+              <img src="assets/images/crystal.png" alt="RPG Game">
+    
+              <h3>Crystal Game</h3>
+            </a>
+          </div>
+          <div class="work">
+            <a href="https://cbeez07.github.io/Triviagame/" target="_blank">
+              <img src="assets/images/trivia.png" alt="Trivia Game">
+    
+              <h3>Trivia Game</h3>
+            </a>
+          </div>
+          <div class="work">
+            <a href="https://cbeez07.github.io/Giphy/" target="_blank">
+              <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
+    
+              <h3>Giphy</h3>
+            </a>
+          </div>
+          <div class="work">
+            <a href="https://cbeez07.github.io/Trains/" target="_blank">
+              <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+    
+              <h3>Train Schedule</h3>
+            </a>
+          </div>
+    
+        </section>
+  </div>
+
+  <footer class="page-footer teal lighten-2">
     <div class="container">
-      Copyright &copy; 2016 Your Name
+        <div class="row">
+        <div class="col l6 s12">
+            <h5 class="white-text">Connect With Me</h5>
+            <a class="grey-text text-lighten-3" href="https://github.com/cbeez07"><img src="assets/images/github-128.png" alt="github"></a>
+            <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/beesleyc07"><img src="assets/images/linkedin-128.png" alt="linkedIn"</a>
+            <a class="grey-text text-lighten-3" href="https://stackexchange.com/users/12539854/chris-beesley"><img src="assets/images/stackoverflow-128.png"</a>
+            
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright cyan darken-3">
+        <div class="container">
+        © 2018 Copyright Christopher Beesley
+        </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="javascript/app.js"></script>
 </body>
 
 </html>

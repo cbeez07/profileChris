@@ -1,6 +1,12 @@
+/* Header */
 header img {
     width: 150px;
     margin-bottom: 10px;
+}
+
+header {
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 
 header nav{
@@ -45,10 +51,47 @@ header h4 {
  }
  #centeredmenu ul li a {
     display:block;
-    margin:0 0 0 1px;
+    margin-right: 20px;
     padding:3px 10px;
     color:#07014c;
     text-decoration:none;
     line-height:1.1em;
     font-size: 2.7em;
  }
+
+ /* About me Section */
+
+ .aboutMe {
+     margin-top: 30px;
+ }
+
+ body {
+    background-image: url(../images/bgImage.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center 85px;
+    background-size: cover;
+}
+
+div p {
+    color: #07014c;
+}
+
+/* portfolio */
+span {
+    font-size: x-large;
+}
+
+.portfolioTop {
+    margin-bottom: 20px;
+}
+
+.websitePics {
+    width: 400px;
+}
+
+/* footer */
+footer a img{
+    height: 50px;
+    background: white;
+}
