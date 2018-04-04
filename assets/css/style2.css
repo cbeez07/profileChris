@@ -9,24 +9,30 @@ header img {
 
 header {
     padding-top: 10px;
+    background-color: #acb9b8;
+}
+
+.zIndex {
+    
 }
 
 header nav{
     box-shadow: none;
+    background-color: #829c9a;
 }
 
 header p {
     font-size: 1.7em;
     margin-bottom: 10px;
-    color: #07014c;
+    color: #3f3f40;
 }
 
 .sidNavColor{
-    color: #07014c;
+    color: #3f3f40;
 }
 
 header h4 {
-    color: #07014c;
+    color: #3f3f40;
 }
 
 #centeredmenu {
@@ -58,8 +64,8 @@ header h4 {
  #centeredmenu ul li a {
     display:block;
     margin-right: 20px;
-    padding:3px 10px;
-    color:#07014c;
+    padding:10px 10px;
+    color:#3f3f40;
     text-decoration:none;
     line-height:1.1em;
     font-size: 2.7em;
@@ -67,6 +73,10 @@ header h4 {
 
  /* About me Section */
 
+ #paragraph {
+    width: 85%;
+    margin-left: 20px;
+}
  .aboutMe {
      margin-top: 30px;
  }
@@ -87,12 +97,18 @@ header h4 {
 } */
 
 div p {
-    color: #07014c;
+    color: #3f3f40;
+    opacity: .7;
 }
 
 /* portfolio */
 span {
     font-size: x-large;
+}
+
+.span {
+    float: left;
+    width: 50%;
 }
 
 .portfolioTop {
@@ -101,10 +117,35 @@ span {
 
 .websitePics {
     width: 400px;
+    margin-left: 66px;
 }
 
 /* footer */
 footer a img{
     height: 50px;
     background: white;
+}
+
+#footerOne {
+    background-color: #acb9b8;
+}
+
+#footer {
+    background-color: #829c9a;
+
+}
+
+@media only screen and (max-width: 1416px) {
+    .websitePics {
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 1231px) {
+    .span {
+        width: 100%;
+    }
+    .websitePics {
+        margin-top: 10px;
+        width: 100%;
+    }
 }
