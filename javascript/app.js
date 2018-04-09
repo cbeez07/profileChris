@@ -23,25 +23,28 @@ $(document).ready(function(){
     let message = ''; 
     $('#submit-button').on('click', function(event) {
         event.preventDefault();
-
+        
         console.log('one');
         name = $('.name').val().trim();
         email = $('.email').val().trim();
         message = $('.message').val().trim();
         console.log('two', name, email, message);
-
-        $('.name').val('')
-        $('.email').val('')
-        $('.message').val('')
-        
-        database.ref('/people').push({
-            name: name,
-            email: email,
-            message: message
-        });
-
-        $('#thanks').text('Thank you ' + name + ' for contacting me. I will get back to you as soon as I can.')
-        
+        if (name === '' || email === '') {
+            $('#modalHeader').text('Your Message Has Not Been Submitted.')
+            $('#thanks').text('Please fill in the name and email fields.');
+        } else {
+            $('.name').val('')
+            $('.email').val('')
+            $('.message').val('')
+            
+            database.ref('/people').push({
+                name: name,
+                email: email,
+                message: message
+            });
+            $('#modalHeader').text('Your Message Has Been Submitted.')
+            $('#thanks').text('Thank you ' + name + ' for contacting me. I will get back to you as soon as I can.')
+        }   
     });
 
 
